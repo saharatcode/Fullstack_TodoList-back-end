@@ -64,20 +64,7 @@ export default function Register() {
                             name="confirm"
                             label="Confirm Password"
                             dependencies={['password']}
-                            // hasFeedback
                             rules={[
-                                {
-                                    required: true,
-                                    message: 'Please confirm your password!',
-                                },
-                                ({ getFieldValue }) => ({
-                                    validator(rule, value) {
-                                        if (!value || getFieldValue('password') === value) {
-                                            return Promise.resolve();
-                                        }
-                                        return Promise.reject('The two passwords that you entered do not match!');
-                                    },
-                                }),
                             ]}
                         >
                             <Input.Password />
@@ -85,11 +72,7 @@ export default function Register() {
 
                         <Form.Item
                             name="nickname"
-                            label={
-                                <span>
-                                    Nickname&nbsp;
-                        </span>
-                            }
+                            label={<span>Nickname&nbsp;</span>}
                             rules={[{ required: true, message: 'Please input your nickname!', whitespace: true }]}
                         >
                             <Input />

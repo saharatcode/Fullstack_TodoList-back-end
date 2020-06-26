@@ -29,10 +29,10 @@ export default function TodoList() {
     };
 
     return (
-        <Row justify="center">
+        <Row justify="center" style={{margin: "50px"}}>
             <Col>
                 <Row>
-                    <Text type="warning">กรุณาใส่ Todo ที่ต้องการเพิ่ม</Text>
+                    <Text type="primary">กรุณาใส่ Todo ที่ต้องการเพิ่ม</Text>
                 </Row>
                 <Row justify="center">
                     <Col span={20}>

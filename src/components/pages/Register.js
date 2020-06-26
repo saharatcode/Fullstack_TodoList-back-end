@@ -64,7 +64,12 @@ export default function Register() {
                             name="confirm"
                             label="Confirm Password"
                             dependencies={['password']}
+                            // hasFeedback
                             rules={[
+                                {
+                                    required: true,
+                                    message: 'Please confirm your password!',
+                                },
                             ]}
                         >
                             <Input.Password />

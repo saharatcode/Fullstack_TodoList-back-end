@@ -63,8 +63,6 @@ export default function Register() {
                         <Form.Item
                             name="confirm"
                             label="Confirm Password"
-                            dependencies={['password']}
-                            // hasFeedback
                             rules={[
                                 {
                                     required: true,
